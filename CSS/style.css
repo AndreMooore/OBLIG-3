@@ -22,7 +22,6 @@ header {
 header nav {
     display: flex;
     justify-content: space-between;
-    position: relative;
     
 }
 
@@ -43,26 +42,6 @@ header nav div {
 
 .navbar{
     display: none;
-}
-
-.responsive{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    top: 40px;
-    width: 100%;
-    list-style: none;
-
-}
-
-.responsive a {
-    color: white;
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
 }
 
 .black-btn{
@@ -89,6 +68,14 @@ footer {
 }
 
 @media only screen and (min-width:600px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    
     .navbar{
         display: flex;
         flex-direction: row;
@@ -97,27 +84,20 @@ footer {
         margin: 0;
     }
 
-    #ham, .fa-magnifying-glass{
+    #ham{
         display: none;
     }
 
-    .flex-section{
-        display: flex;
-        flex-direction: column;
-        
+    main{
+        display: grid;
+        grid-template-columns: 33.333% 33.333% 33.333%;
+        gap: 5px;
+        align-items: start;
     }
 
-    .flex-section img {
-        width: 50%;
+    footer{
+        background-color: red;
     }
 
-    .flex-section section{
-        width: 50%;
-        align-self: center;
-    }
-
-    .right img{
-        order: 4;
-    }
 }
 
