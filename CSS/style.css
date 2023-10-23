@@ -56,6 +56,12 @@ main {
   grid-area: main;
 }
 
+.produktnavn {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+
 main section img {
   width: 100%;
 }
